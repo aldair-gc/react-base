@@ -1,5 +1,16 @@
-function App() {
-  return <h1>Hello world!</h1>;
-}
+import { BrowserRouter } from 'react-router-dom';
 
-export default App;
+// import history from './services/history';
+import Routes from './routes/index';
+import GlobalStyle from './styles/global';
+import Header from './components/Header';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes />
+      <GlobalStyle />
+    </BrowserRouter>
+  );
+}
