@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   padding: 20px;
   display: flex;
   gap: 20px;
+  color: #fff;
 
   a {
     color: #fff;
